@@ -1,0 +1,10 @@
+<div class="tab">
+  <div class="tabs">
+    <div [ngClass]="{ 'selected': details, 'get-back': !details && owners }" (click)="selectTab('details')" class="tab details-color">Details</div>
+    <div [ngClass]="{ selected: creators }" (click)="selectTab('creators')" class="tab creators-color">Creators</div>
+    <div [ngClass]="{ 'selected': owners, 'get-back': !owners && details }" (click)="selectTab('owners')" class="tab owners-color">Owners</div>
+  </div>
+  <div *ngIf="details" class="tab-content details">Details Text</div>
+  <div *ngIf="creators" class="tab-content creators">Creators Text</div>
+  <div *ngIf="owners" class="tab-content owners">Owners Text</div>
+</div>

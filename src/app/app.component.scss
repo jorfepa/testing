@@ -1,0 +1,25 @@
+.tabs {
+    display: flex;
+
+    div {
+        padding: 7px 20px 7px 20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        font-size: 1rem;
+    }
+
+    .details {
+        background: red;
+    }
+
+    .creators {
+        background: yellow;
+        margin-left: -15px;
+        z-index: 1;
+    }
+
+    .owners {
+        background: green;
+        margin-left: -15px;
+    }
+}

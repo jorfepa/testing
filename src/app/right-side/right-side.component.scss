@@ -1,0 +1,40 @@
+.content {
+  background-color: #836cac;
+  height: 90vh;
+  width: 90%;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .body {
+    height: 80%;
+    padding: 20px 30px 0 30px;
+
+    .header {
+      display: flex;  
+      .push {
+        margin-left: auto;
+      }
+    }
+
+    .title {
+      padding: 20px 0;
+    }
+
+  }
+
+  .image {
+    position: relative;
+    bottom: -7%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  .tabs {
+    flex: 1 1 30%;
+    min-height: 30%;
+  }
+}
